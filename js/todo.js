@@ -5,7 +5,9 @@ function showList(){
 let todoArray = JSON.parse(localStorage.getItem("todo"));
 for (i = 0; i < todoArray.length; i++) {
     const li = document.createElement("li");
-    li.innerText = todoArray[i];
+const span = documemt.createElement("span");
+    span.innerText = todoArray[i];
+li.appendChild(span);
     todoList.appendChild(li);
   }
 }

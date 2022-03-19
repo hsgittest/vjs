@@ -9,7 +9,7 @@ const USERNAME_KEY = "username";
 function handleLogin(e) {
   e.preventDefault();
 
-  console.log(id.value);
+  // console.log(id.value);
   form.classList.add(HIDDEN_CLASSNAME);
 
   paintGreetings(id.value);

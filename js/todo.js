@@ -26,7 +26,10 @@ function handleTodo(e) {
   //   todoList.removeChild("li");
 
   const li = document.createElement("li");
-    li.innerText = todoArray[i];
+const span = documemt.createElement("span");
+
+    span.innerText = todoArray[i];
+li.appendChild(span);
     todoList.appendChild(li);
 }
 todo.addEventListener("submit", handleTodo);

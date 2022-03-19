@@ -2,6 +2,7 @@ const todo = document.querySelector("#todo");
 
 const todoList = document.querySelector("#todo-list");
 function showList(){
+let todoArray = JSON.parse(localStorage.getItem("todo"));
 for (i = 0; i < todoArray.length; i++) {
     const li = document.createElement("li");
     li.innerText = todoArray[i];

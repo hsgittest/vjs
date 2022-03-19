@@ -17,6 +17,7 @@ function handleTodo(e) {
   //   console.log(json);
   localStorage.setItem("todo", json);
   //   todoList.removeChild("li");
+todoList='';
   for (i = 0; i < todoArray.length; i++) {
     const li = document.createElement("li");
     li.innerText = todoArray[i];

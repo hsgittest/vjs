@@ -11,6 +11,12 @@ li.appendChild(span);
     todoList.appendChild(li);
   }
 }
+
+function delOne(e){
+e.preventDefault();
+const li = e.target.parentElememt();
+li.remove();
+}
 function handleTodo(e) {
   e.preventDefault();
   const todoInput = todo.querySelector("input");
@@ -29,9 +35,12 @@ function handleTodo(e) {
 
   const li = document.createElement("li");
 const span = documemt.createElement("span");
-
+const btn = document.createElement("button");
     span.innerText = todoArray[i];
+btn.innerText = "X";
+btn.addEventListener("click",delOne);
 li.appendChild(span);
+li.appendChild(btn);
     todoList.appendChild(li);
 }
 todo.addEventListener("submit", handleTodo);
